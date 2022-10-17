@@ -10,26 +10,22 @@
 
 .first-row p{
     padding-bottom: 32px;
-    margin: 0 240px;
+    margin: 0 15rem;
 }
 
 .second-row {
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
     padding-top: 40px;
 }
 
 .collum{
-    -ms-flex: 33%;
     flex: 33%;
     max-width: 33%;
 }
 
 .second-row .collum p{
     margin-top : 20px;
-    font-size: 16px;
+    font-size: 1rem;
 }
 
 .second-row .collum p img {
@@ -42,6 +38,11 @@
     .first-row p{
         margin: 0;
     }
+
+    .second-row{
+        flex-wrap:wrap;
+    }
+
     .collum{
         flex:50%;
         max-width: 50%
@@ -49,6 +50,7 @@
 }
 @media screen and (max-width: 400px) {
     .second-row{
+        flex-wrap: wrap;
         justify-content: center;
     }
     .collum{
